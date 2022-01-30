@@ -38,7 +38,7 @@ nano results/ALLMUT_FILTERED.vcf
 grep -n chrom ALLMUT_FILTERED.vcf
 wc -l ALLMUT_FILTERED.vcf
 # tail -n the number of lines after #chrom  or grep -v '#' ALLMUT_FILTERED.vcf
-awk '{FS="\t";print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6"\t.\t"$7}' ../rnaseqmut/demo/results/ALLMUT_FILTERED.vcf | tail -7 > ../rnaseqmut/demo/results/ALLMUT_FILTERED.filtercoladded.vcf
+awk '{FS="\t";print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6"\t.\t"$7}' ../rnaseqmut/demo/results/ALLMUT_FILTERED.vcf | tail -5500 > ../rnaseqmut/demo/results/ALLMUT_FILTERED.filtercoladded.vcf
 
 
 #for annovar, first download a few annotation databases
